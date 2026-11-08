@@ -2,9 +2,9 @@ import streamlit as st
 import sys
 import os
 
+# This line ensures Streamlit finds the modules folder in the cloud
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-# Import our modules
 from modules.semantic_parser import extract_agricultural_entities
 from modules.recommendation_engine import get_recommendation, get_follow_up_questions
 
